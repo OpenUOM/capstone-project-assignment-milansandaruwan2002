@@ -1,4 +1,3 @@
-//Test one
 const dbConnection = require("./sqlite");
 
 dbConnection
