@@ -23,7 +23,7 @@ const dbinitialize = async () => {
 }
 
 const readTeachers = async () => {
-    const sql = `SELECT * FROM teacher`
+    const sql = SELECT * FROM teacher
     return new Promise((resolve, reject) => {
         knex_db
             .raw(sql)
@@ -93,7 +93,7 @@ const deleteTeacher = async (id) => {
 }
 
 const readStudents = async () => {
-    const sql = `SELECT * FROM student`
+    const sql = SELECT * FROM student
     return new Promise((resolve, reject) => {
         knex_db
             .raw(sql)
@@ -161,16 +161,3 @@ const deleteStudent = async (id) => {
             });
     });
 }
-
-module.exports = {
-    readTeachers,
-    readStudents,
-    addStudent,
-    addTeacher,
-    deleteTeacher,
-    deleteStudent,
-    readStudentInfo,
-    readTeacherInfo,
-    updateStudent,
-    updateTeacher
-};
